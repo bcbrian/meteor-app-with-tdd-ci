@@ -7,6 +7,7 @@
     "start": "meteor run",
     "test": "./.scripts/test.sh",
     "test:client": "meteor test --driver-package avital:mocha --port 3100",
+    "test:console": "spacejam test --driver-package console-test-runner --port 3100",
     "build:css": "node-sass --include-path node_modules client/main.scss client/bundle.css",
     "watch:css": "nodemon -e scss -x npm run build:css",
     "watch:help": "nodemon --help",
