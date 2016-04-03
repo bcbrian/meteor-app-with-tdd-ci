@@ -9,13 +9,13 @@ module.exports = {
     },
 
     meteor: {
-      name: 'bcbrian',
+      name: 'meteor-app',
       path: '../',
       servers: {
         one: {},
       },
       env: {
-        PORT: 3086,
+        PORT: 3000,
         ROOT_URL: 'http://bcbrian.com',
         MONGO_URL: 'mongodb://localhost/meteor'
       },
@@ -24,7 +24,7 @@ module.exports = {
 
     mongo: {
       oplog: false,
-      port: 3087,
+      port: 3001,
       servers: {
         one: {},
       },
