@@ -46,7 +46,7 @@ You will need to have node installed. A great way to manage this is [nvm](https:
 
 ### What you need to do to deployment
 - After forking and cloning choose a CI platform.
->This project will deploy from both if it passes on master branch. You can set either to false in the deploy.sh script so that it never deploys from that one, if you are using both. I have not encounter any issues yet with both deploying.
+>This project will deploy from both if it passes on master branch. You can set either to false in the deploy.sh script so that it never deploys from that one, if you are using both. I have encountered issues with both deploying.
 
 - According to you CI choice configure the following environment variables.
   - DPIP -> Your deployment server's IP address
