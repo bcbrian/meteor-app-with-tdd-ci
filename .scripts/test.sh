@@ -2,14 +2,11 @@
 ./.scripts/unit-test.sh
 
 if [ $? -eq 0 ]; then
-  ./.scripts/e2e-test.sh
-  if [ $? -eq 0 ]; then
-    ./.scripts/deploy.sh
-    exit $?
-  else
-    exit 1
-  fi
+  ./.scripts/deploy.sh
+  exit $?
 else
-  echo "Failed unit tests"
+  echo "#####################"
+  echo "# Failed unit tests #"
+  echo "#####################"
   exit 1
 fi

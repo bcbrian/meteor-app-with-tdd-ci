@@ -11,10 +11,7 @@
     "build:css": "node-sass --include-path node_modules client/main.scss client/bundle.css",
     "watch:css": "nodemon -e scss -x npm run build:css",
     "watch:help": "nodemon --help",
-    "watch:test:console": "nodemon -e js,jsx -x npm run test:console",
-    "chimp": "chimp --ddp=http://localhost:3000 --watch --browser=phantomjs",
-    "test:chimp": "chimp --ddp=http://localhost:3000 --browser=phantomjs",
-    "watch:chimp:console": "npm run start & npm run chimp"
+    "watch:test:console": "nodemon -e js,jsx -x npm run test:console"
   },
   "repository": {
     "type": "git",
